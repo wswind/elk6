@@ -15,7 +15,7 @@ services:
     build:
       context: elk/logstash/
     ports:
-      - "8080:8080"
+      - "8081:8081"
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     depends_on:
