@@ -3,4 +3,5 @@ FROM logstash:6.8.3
 
 # Add your logstash plugins setup here
 # Example: RUN logstash-plugin install logstash-filter-json
+RUN sed -i 's/rubygems.org/gems.ruby-china.com/g' Gemfile
 RUN logstash-plugin install logstash-input-http
